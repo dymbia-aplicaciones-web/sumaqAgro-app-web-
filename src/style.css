@@ -1,0 +1,143 @@
+/*
+ * Global styles and design tokens of SumaqAgro.
+ * Extracted from the Angular app: Material 3 theme (primary green, tertiary
+ * cyan, Poppins), shell sizes and the colors of the demo access page.
+ */
+:root {
+  /* Brand */
+  --sa-primary: #006e1c;
+  --sa-on-primary: #ffffff;
+  --sa-tertiary: #006874;
+  --sa-on-tertiary: #ffffff;
+  --sa-on-tertiary-fixed-variant: #004f58;
+  --sa-tertiary-fixed-dim: #4fd8eb;
+  --sa-sign-out: color-mix(in srgb, var(--sa-on-tertiary-fixed-variant) 80%, black);
+  --sa-secondary-container: #d3e8cf;
+  --sa-on-secondary-container: #0f1f0f;
+  --sa-error: #ba1a1a;
+  --sa-error-container: #ffdad6;
+  --sa-on-error-container: #410002;
+
+  /* Surfaces */
+  --sa-surface: #f9faf3;
+  --sa-surface-container-low: #f3f5ed;
+  --sa-surface-container-high: #e7e9e1;
+  --sa-on-surface: #1a1c18;
+  --sa-on-surface-variant: #42493f;
+  --sa-outline-variant: #c2c9bd;
+
+  /* Shell */
+  --sa-sidebar-width: 312px;
+  --sa-toolbar-height: 72px;
+  --sa-radius-card: 16px;
+  --sa-radius-large: 20px;
+
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--sa-on-surface);
+  background-color: var(--sa-surface-container-low);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-size: 14px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#app {
+  width: 100%;
+}
+
+/* Shared page pieces */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sa-card {
+  border: 1px solid var(--sa-outline-variant);
+  border-radius: var(--sa-radius-large);
+  box-shadow: none;
+}
+
+.sa-dark-card {
+  --p-card-background: var(--sa-on-tertiary-fixed-variant);
+  --p-card-color: var(--sa-on-tertiary);
+  --p-card-subtitle-color: var(--sa-on-tertiary);
+  border-radius: var(--sa-radius-large);
+  background: var(--sa-on-tertiary-fixed-variant);
+  color: var(--sa-on-tertiary);
+}
+
+.sa-card {
+  --p-card-shadow: none;
+}
+
+.sa-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background: var(--sa-secondary-container);
+  color: var(--sa-on-secondary-container);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sa-muted {
+  color: var(--sa-on-surface-variant);
+}
+
+.sa-error {
+  color: var(--sa-error);
+}
+
+.sa-pill.p-button {
+  border-radius: 9999px;
+}
+
+.sa-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.sa-field > label {
+  color: var(--sa-on-surface-variant);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Labels "V1", "V2"... of the vertices on the boundary map. */
+.vertex-label {
+  border-color: #1b5e20;
+  border-radius: 12px;
+  color: #1b5e20;
+  font-weight: 600;
+}
