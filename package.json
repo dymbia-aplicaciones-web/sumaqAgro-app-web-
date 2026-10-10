@@ -1,0 +1,45 @@
+{
+  "name": "sumaqagro-vue",
+  "private": true,
+  "version": "1.0.0",
+  "description": "SumaqAgro is a web platform for precision agriculture, field costs and quality certification of potato and coffee. It is organized with Domain-Driven Design (DDD) bounded contexts and built with Vue, Axios, Vite, Pinia, PrimeVue, with JavaScript.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "vue",
+    "vite",
+    "pinia",
+    "primevue",
+    "primeflex",
+    "primeicons",
+    "axios",
+    "json-server",
+    "leaflet",
+    "chart.js",
+    "domain-driven-design",
+    "sumaqagro"
+  ],
+  "dependencies": {
+    "@primeuix/themes": "^3.0.1",
+    "axios": "^1.20.0",
+    "chart.js": "^4.5.1",
+    "leaflet": "^1.9.4",
+    "pinia": "^4.0.3",
+    "primeflex": "^4.0.0",
+    "primeicons": "^8.0.2",
+    "primevue": "^5.0.2",
+    "vue": "^3.5.43",
+    "vue-chartjs": "^5.3.4",
+    "vue-i18n": "^11.4.13",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.9",
+    "json-server": "^0.17.4",
+    "vite": "^8.3.4"
+  }
+}
